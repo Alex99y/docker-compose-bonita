@@ -12,5 +12,5 @@ To stop Bonita:
 # More options
 Excecute *./setup.sh* without arguments
 
-# Configuring Bonita
+# Configure Bonita
 Modify the environment variables in setup.sh
