@@ -6,9 +6,11 @@ chmod 774 setup.sh
 # Quick start
 ./setup up daemon
 Now you can access to the Bonita Portal on http://localhost:8080/bonita
+To stop Bonita:
+./setup down
 
-# For more
-Excecute ./setup.sh without arguments
+# More options
+Excecute *./setup.sh* without arguments
 
 # Configuring Bonita
 Modify the environment variables in setup.sh
