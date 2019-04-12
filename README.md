@@ -1,13 +1,13 @@
 # Getting started
 git clone https://github.com/Alex99y/docker-compose-bonita
 cd docker-compose-bonita
-chmod 774 setup.sh
+chmod 774 ./setup.sh
 
 # Quick start
-./setup up daemon  
+./setup.sh up daemon  
 Now you can access to the Bonita Portal on http://localhost:8080/bonita  
 To stop Bonita:  
-./setup down  
+./setup.sh down  
 
 # More options
 Excecute *./setup.sh* without arguments
