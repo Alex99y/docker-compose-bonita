@@ -1,7 +1,7 @@
 # Getting started
-git clone https://github.com/Alex99y/docker-compose-bonita
-cd docker-compose-bonita
-chmod 774 ./setup.sh
+git clone https://github.com/Alex99y/docker-compose-bonita  
+cd docker-compose-bonita  
+chmod 774 ./setup.sh  
 
 # Quick start
 ./setup.sh up daemon  
