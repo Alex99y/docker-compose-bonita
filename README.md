@@ -13,4 +13,6 @@ To stop Bonita:
 Excecute *./setup.sh* without arguments
 
 # Configure Bonita
-Modify the environment variables in setup.sh
+Modify the environment variables in setup.sh  
+./setup.sh down volumes  
+./setup.sh up daemon  
