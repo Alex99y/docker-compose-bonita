@@ -81,7 +81,7 @@ fi
 if [[ ( $0 == "./setup.sh" && $1 == "import" && $2 == "database" && $# == 2) ]]
 then
     echo "Importing database and saving it in the backup directory"
-    docker exec -t postgresql pg_dumpall -c -U postgres > backups/dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
+    docker exec -t postgresql pg_dumpall -c -U $POSTGRES_USER > backups/dump_`date +%d-%m-%Y"_"%H_%M_%S`.sql
     exit 0
 fi
 
@@ -89,7 +89,7 @@ if [[ ( $0 == "./setup.sh" && $1 == "export" && $# == 2) ]]
 then
     echo "Exporting database from file"
     docker-compose stop bonita
-    cat $2 | docker exec -i postgresql psql -U postgres
+    cat $2 | docker exec -i postgresql psql -U $POSTGRES_USER
     docker-compose up -d
     exit 0
 fi
